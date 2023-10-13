@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    /* background: #0082e6; */
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: purple;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    /* letter-spacing:1px; */
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(31, 31, 31);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    #about {
+        flex-direction: column;
+
+    }
+    #belAbout{
+        flex-direction: column;
+    }
+    #proficiency{
+        flex-direction: column;
+    }
+    #proficiency>div{
+        width: 100%;
+    }
+    #openSource>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #acieveCerti>div{
+        flex-direction: column;
+    }
+
+    #about #about_button {
+        width: 100%;
+    }
+
+    #about img {
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1258px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+#about {
+    padding-top: 60px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+#about h1 {
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+#about p {
+    font-size: 24px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+#about_img {
+    width: 650px;
+}
+
+#social {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#about_button {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about button {
+    background-color: purple;
+    font-size: 18px;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+#belAbout {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+#belAbout img{
+    width: 100%;
+    border-radius: 50%;
+}
+#belAbout h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+#belAbout p{
+    font-size: 18px;
+    word-spacing: 1px;
+    /* letter-spacing: 2px; */
+    line-height: 32px;
+}
+#proficiency{
+     display: flex;
+     width: 90%;
+     margin: auto;
+     justify-content: space-between;
+}
+#proficiency>div{
+    width: 80%;
+}
+#proficiency p{
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+#proficiency h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+#proficiency img{
+    width: 100%;
+}
+
+/* Open Source Project Section */
+
+#openSource{
+    width: 90%;
+    margin: auto;
+}
+#openSource>h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+#openSource>div{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+#openSource>div>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+/* Acheivements And Certificates */
+
+#acieveCerti{
+    width: 90%;
+    margin: auto;
+}
+#acieveCerti>h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#acieveCerti>div{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#acieveCerti>div>div{
+    display: flex;
+    /* border: 1px solid black; */
+    /* width: 400px; */
+    padding: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#acieveCerti>div>div>div{
+    height: 250px;
+    /* contain: content; */
+    object-fit: cover;
+
+}
+#acieveCerti>div>div img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#reachOut{
+    width: 90%;
+    margin: auto;
+
+
+}
+#reachOut>h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+#reachOut>div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+#reachOut>div img{
+    border-radius: 50%;
+}
