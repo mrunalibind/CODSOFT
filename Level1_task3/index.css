@@ -1,0 +1,37 @@
+#btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+input{
+    width: 98%;
+    outline: none;
+    padding: 8px 2px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+}
+#btns>button:hover{
+    background-color: rgb(154, 189, 220);
+    color: black;
+    border: 1px solid darkblue;
+}
+#btns>button{
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(20, 93, 166);
+    border-radius: 8px;
+    
+    color: white;
+    font-size: 25px;
+
+}
+#calc{
+   border-radius: 20px;
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(43, 128, 213);
+}
