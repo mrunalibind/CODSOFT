@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NavFirst section */
+#navFirst{
+    background: rgb(202,170,69);
+    background: linear-gradient(90deg, rgba(202,170,69,1) 7%, rgb(224, 92, 78) 39%, rgb(240, 144, 178) 70%, rgba(255,0,219,1) 100%);
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+#navFirst>div:nth-child(1) i{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 17px 8px;
+    color: white;
+}
+
+#navFirst>div:nth-child(2) p{
+    color: white;
+}
+
+#navFirst>div:nth-child(3) button{
+    padding: 6px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 14px;
+}
+
+
+/* NavSecond section */
+#navSecond{
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+#navSecond>div:nth-child(1){
+    display: flex;
+    /* justify-content: space-between; */
+}
+#navSecond>div:nth-child(1) i{
+    background-image: linear-gradient(90deg, rgba(202,170,69,1) 7%, rgb(224, 92, 78) 39%, rgb(240, 144, 178) 70%, rgba(255,0,219,1) 100%);
+    color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+  margin-right: 8px;
+}
+
+#navSecond>div:nth-child(1) h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navSecond>div:nth-child(2){
+    display: flex;
+    /* border: 1px solid red; */
+    width: 400px;
+    justify-content: space-between;
+}
+
+#imgBann img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#service>div>div {
+    display: flex;
+}
+#service>div>div i{
+    margin-right: 8px;
+}
+#serviceSection{
+    margin-top: -4px;
+    background: rgb(202,170,69);
+    background: linear-gradient(90deg, rgba(202,170,69,1) 7%, rgb(224, 92, 78) 39%, rgb(240, 144, 178) 70%, rgba(255,0,219,1) 100%);
+}
+#service{
+    padding: 50px 0px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutUs>div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+#aboutUs>div>div:nth-child(1){
+    width: 60%;
+}
+
+#aboutUs{
+    padding: 50px 0px;
+}
+#aboutUs h2,h3,p{
+    margin-bottom: 15px;
+}
+#aboutUs p{
+    font-size: 18px;
+    line-height: 24px;
+    word-spacing: 2px;
+}
+#aboutUs button{
+    padding: 8px 14px;
+    background: rgb(202,170,69);
+    background: linear-gradient(90deg, rgba(202,170,69,1) 7%, rgb(224, 92, 78) 39%, rgb(240, 144, 178) 70%, rgba(255,0,219,1) 100%);
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+#aboutUs>div img{
+    width: 260px;
+}
+
+
+/* Our services Section */
+#our{
+    background-color: rgb(221, 219, 219);
+}
+#our h1{
+    padding: 20px 0px;   
+}
+#our>div{
+    width: 80%;
+    margin: auto;
+}
+.bor{
+    width: 50px;
+    border: 1px solid rgb(212, 8, 8);
+    margin-bottom: 20px;
+}
+
+#threeIng{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 32%;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+.box p{
+    margin: 10px;
+}
+
+#our>div img{
+    width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    #navFirst{
+        display: none;
+    }
+    #navSecond{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #service{
+        flex-direction: column;
+    }
+    #aboutUs>div{
+        flex-direction: column;
+    }
+    #aboutUs img{
+        display: block;
+        margin: auto;
+    }
+    #aboutUs>div>div:nth-child(1){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #threeIng{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:450px){
+    #navSecond>div:nth-child(2){
+        flex-direction: column;
+    }
+    #navSecond{
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
